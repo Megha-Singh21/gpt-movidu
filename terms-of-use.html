@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/moviduicon.png" />
+    <title>Hire Interns &amp; Freshers | Post Internships &amp; Jobs | GPT MOVIDU | Privacy Policy</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+    <div class="modal " id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                    </button>
+                </div>
+                <div class="modal-body ">
+                    <div id="user-menu-container">
+                        <h5><b>Login</b></h5>
+                    </div>
+                    <form role="form" id="modal-login-form" method="POST">
+                        <input type="hidden" name="csrf_test_name" value="93628191c18294f5d8eff827105b2ee4" />
+                        <div class="form-group">
+                            <label for="email" class="control-label">Email</label>
+                            <input type="email" class="form-control" id="modal_email" tabindex="1" name="email"
+                                placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="control-label">Password</label>
+                            <input type="password" class="form-control" id="modal_password" tabindex="2" name="password"
+                                placeholder="Must be atleast 6 characters">
+                        </div>
+                        <div class="forgot_password">
+                            <a class="text-primary" data-toggle="modal" data-target="#forgot-password-modal"
+                                data-dismiss="modal" id="forgot-password">Forgot
+                                password?</a>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary" id="modal_login_submit"
+                                tabindex="3">Login</button>
+                        </div>
+                        <div class="form-group new_to_internshala">
+                            <label>
+                                New to GPT MOVIDU? Register <a href="index.html">Company</a>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal " id="forgot-password-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                    </button>
+                </div>
+                <div class="modal-body ">
+                    <div id="user-menu-container">
+                        <h5><b>Forgot Password</b></h5>
+                    </div>
+                    <form role="form" id="modal-login-form" method="POST">
+                        <input type="hidden" name="csrf_test_name" value="93628191c18294f5d8eff827105b2ee4" />
+                        <div class="sub_heading">
+                            Enter your registered Email ID to receive new password.
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="control-label">Email</label>
+                            <input type="email" class="form-control" id="modal_email" tabindex="1" name="email"
+                                placeholder="john@example.com">
+                        </div>
+                        <div class="forgot_password float-right">
+                            <a class="text-primary" data-toggle="modal" data-target="#login-modal" data-dismiss="modal"
+                                id="forgot-password">Login?</a>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary" id="modal_login_submit"
+                                tabindex="3">Reset</button>
+                        </div>
+                        <div class="form-group new_to_internshala">
+                            <label>
+                                New to GPT MOVIDU? Register <a href="index.html">Company</a>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="header" class="header_container container-fluid">
+        <div class="max-width-container">
+            <div class='layer'></div>
+
+            <nav class="navbar navbar-expand-md">
+                <div class="brand_container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/movidu-logo.png" width="180px" alt="">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse navbar_desktop">
+                    <ul class="navbar-nav nav_menu_container">
+                        <li class="nav-item">
+                            <a data-toggle="modal" data-target="#login-modal"
+                                class="employer_login_on_registration_page">
+                                <button id="header_login_button" class="btn btn-outline-warning">Login</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile_registration_login">
+                    <a data-toggle="modal" data-target="#login-modal" class="employer_login_on_registration_page">
+                        <button id="header_login_button" class="btn btn-outline-warning">Login</button>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container pt-3 pb-3">
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="text-light bg-theme p-2">TERMS OF USE</h4>
+                <p>This document is published in accordance with the provisions of Rule 3 (1) of the Information
+                    Technology
+                    (Intermediaries Guidelines) Rules, 2011 that require publishing the rules and regulations, Privacy
+                    Policy and
+                    Terms of Use for access or usage of the www.GPT MOVIDU.in</p>
+                <p>GPT MOVIDU Technology Private. Ltd.("GPT MOVIDU," "us," "our" or "we") provides this website to
+                    you ("User") under the following terms and conditions (this "Agreement" or "Terms of
+                    Use"). Our Privacy Policy (as in posted to our website), which explains how we collect
+                    and use information from visitors to our website is incorporated by reference in
+                    these Terms of Use. By using our website (the "Site") or submitting any information
+                    to us, you consent to and agree to be bound by these Terms of Use and our Privacy
+                    Policy. By using the Site in any manner, including but not limited to visiting or
+                    browsing the Site, you agree to be bound by this Agreement, the Privacy Policy, and
+                    all other operating rules, policies and procedures that may be published by us from
+                    time to time on the Site, each of which is incorporated by reference and each of
+                    which may be updated by us from time to time without notice to you. Your use of the
+                    Site is governed by the version of this Agreement in effect on the date of use.</p>
+                <h5 class="text-light bg-theme p-2">ACCOUNT REGISTRATION</h5>
+                <p>If you are under the age of 18, please do not sign up for an account. If you are
+                    accessing or using our site on behalf of any entity, you represent that you are
+                    authorised to accept these Terms of Use on that entity's behalf, that entity agrees to
+                    be responsible to GPT MOVIDUif you violate these Terms of Use.</p>
+                <p>You may access some areas of our site(s) without registering. However, in order to
+                    access certain features of the Site or to post content on the Site you must register to
+                    create an account ("Account"). You must complete the registration process by
+                    providing us with current, complete and accurate information. If you choose to
+                    register you will need to provide a username and password as well as other
+                    information that is part of our registration process. You will not share your password,
+                    let anyone else access your Account, or do anything else that might jeopardize the
+                    security of your Account. We have the right to cancel any account at any time if we
+                    believe you are not in compliance with any or all of the terms.</p>
+                <h5 class="text-light bg-theme p-2">Launch Projects, Websites and Content</h5>
+                <p>GPT MOVIDU provides several online projects and Certification programs both offline as
+                    well as online. Depending on the project chosen, the scope of services and payment
+                    terms might vary. All payments in favour of GPT MOVIDU are non refundable, for any
+                    reason post expiry of trial period i.e. 5 days from the payment.</p>
+                <p>Information about services offered and prices would be provided on the website. You
+                    agree to pay the price for the services that you want to subscribe for as per the
+                    pricing schedule indicated in the Site. At the time of payment, you need to provide
+                    accurate information regarding your account, including a valid credit card or debit
+                    card or net banking credentials, and you must certify that you are over 18 years of
+                    age and legally able to enter into a valid and binding contract with GPT MOVIDU.</p>
+                <p>You agree that GPT MOVIDU will not be liable for any loss caused by any unauthorised use
+                    of your credit card or any other method of payment by a third party in connection
+                    with the use of Site. You waive your right to dispute any payment made into your
+                    account and you will bear all costs.</p>
+                <p>Any attempt to defraud GPT MOVIDU through the use of credit cards or other methods of
+                    payment, or any failure by you to honour charges or requests for payment will result
+                    in immediate termination of your account.</p>
+                <h5 class="text-light bg-theme p-2">PROCESSING OF ACCOUNT PAYMENT</h5>
+                <p>GPT MOVIDU may use third party electronic payment processors and/or financial
+                    institutions ("EPPs") to process financial transactions. You irrevocably authorise us,
+                    as necessary, to instruct such EPPs to handle such transactions and you irrevocably
+                    agree that GPT MOVIDUmay give such instructions on your behalf in accordance with your
+                    requests as submitted on the Site.</p>
+                <p>While availing any of the EPPs available on the Site, We will not be responsible or
+                    assume any liability, whatsoever in respect of any loss or damage arising directly or
+                    indirectly to you due to:</p>
+                <ul>
+                    <li>Lack of authorization for any transactions.</li>
+                    <li>Any payment issues arising out of the transaction or</li>
+                    <li>Decline of such transactions for any reason.</li>
+                </ul>
+                <p>You understand, accept and agree that the payment facility provided us, is neither a
+                    banking nor financial service.</p>
+                <p>Modification of Pricing And Billing Terms:</p>
+                <p>We reserve the right at any time to institute new prices, and to change the amount of
+                    or the basis for determining any prices or charges with respect to any courses
+                    offered. You agree to pay all charges, including applicable taxes, in accordance with
+                    the billing terms in effect at the time the price or charge becomes payable.</p>
+                <h5 class="text-light bg-theme p-2">INTELLECTUAL PROPERTY</h5>
+                <p>GPT MOVIDU expressly reserves all intellectual property rights in all text, programs,
+                    products, projects, processes, technology, content, software and other materials,
+                    which appear on this Website. The compilation (meaning the collection, arrangement
+                    and assembly) of the content on the Website is the exclusive property of GPT MOVIDU.
+                    Reproduction in whole or in part of the same is strictly prohibited without the express
+                    written permission of GPT MOVIDU.</p>
+                <p>The trademarks, logo and slogans displayed on the Site including the mark GPT MOVIDU,
+                    (collectively the "Trademarks' ') are owned by GPT MOVIDU. Nothing on this Site should be
+                    construed as granting any licence or right to use the Trademarks without written
+                    permission of GPT MOVIDU or such third party owner of the Trademarks. Your misuse of
+                    the Trademarks, or any other content on the Site, except as provided in these Terms
+                    of Use, is strictly prohibited. You are advised that GPT MOVIDUwill aggressively enforce its
+                    intellectual property rights to the fullest extent of the law.</p>
+                <p>GPT MOVIDU grants to the registered users a non-exclusive, non-transferable, revocable
+                    right to use the contents on the Site for non-profit, educational and research use only,
+                    without the right of sublicense. GPT MOVIDU respects the intellectual property of others,
+                    and we ask our Users and content partners to do the same. The unauthorised
+                    posting, reproduction, copying, distribution, modification, public display or public
+                    performance of copyrighted works constitutes infringement of the copyright owner’s
+                    rights. As a condition of your use of the Site, you agree not to use any feature of the
+                    Site to infringe the intellectual property rights of others in any way. We will terminate
+                    the accounts of any User, and block access to Site of any User who are repeat
+                    infringers of the copyrights, or other intellectual property rights, of GPT MOVIDUor others.
+                    We reserve the right to take these actions at any time, in our sole discretion, with or
+                    without notice, and without any liability to the User who is terminated or to the User
+                    whose access is blocked.</p>
+                <p>Intellectual Property Right” for the purpose of the Terms of Use, shall mean all
+                    copyrights (including without limitation the exclusive right to reproduce, distribute
+                    copies of, display and perform the copyrighted work and to prepare derivative
+                    works), copyright registrations and applications, trademark rights (including, without
+                    limitation, registrations and applications), patent rights (whether registered or
+                    unregistered), trade names or business names, registered and unregistered design
+                    rights, mask-work rights, trade secrets, moral rights, author’s rights, rights in
+                    packaging, goodwill and other intellectual property rights, and all renewals and
+                    extension thereof and all rights or forms of protection of a similar nature or having
+                    an equivalent or similar effect to any of the above, which may subsist anywhere in
+                    the world, regardless of whether any of such rights arise under the laws of India or
+                    any other state, country or jurisdiction.</p>
+                <h5 class="text-light bg-theme p-2">DATA PROTECTION/PRIVACY</h5>
+                <p>Please read our privacy policy carefully as you are agreeing to be bound by that
+                    privacy policy. Please note that our privacy policy is updated regularly. You should
+                    check it each time you access the site.</p>
+                <h5 class="text-light bg-theme p-2">RESTRICTED ACTIONS</h5>
+                <p>During the use of the Site, you shall not:</p>
+                <p>Attempt to copy, modify, duplicate, imitate, reproduce, create derivative works from,
+                    frame, mirror, or download, all or any portion of the Site in any form or media or by
+                    any means.</p>
+                <p>Attempt to decompile, disassemble, reverse engineer or otherwise attempt to
+                    discover any source code from, all or any part of the site.</p>
+                <p>Sell, resell, redistribute or otherwise commercially exploit any material from this Site
+                    except for content specifically and expressly made available for redistribution.
+                    Access or use all or any part of the Site in order to build or create a product or
+                    service which is similar to, or which competes with, the business of GPT MOVIDU.</p>
+                <p>Attempt to obtain, or assist third parties in obtaining, unauthorised access to the
+                    site.</p>
+                <p>Abuse the use of the site in any way including for advertising or solicitation to buy or
+                    sell any products and/or for creating, sharing and sending unsolicited commercial
+                    messages, bulk email, "junk mail", "spam" or chain letters.</p>
+                <p>Create or send any viruses, worms or trojan horses, flood or mail bombs, or engaging
+                    in denial of service attacks while using the Site.</p>
+                <p>Use the Site in any manner that damages, disables, overburdens, or impairs the Site,
+                    or GPT MOVIDU's systems or servers, or the cloud or other platform on which the we
+                    operate, and/or otherwise interferes with any other party's use and enjoyment of the
+                    Site.</p>
+                <p>Access the site by any means other than through the interface that is provided by us
+                    for accessing the Site.</p>
+                <p>Permit any third party to do any of the foregoing.</p>
+                <p>You shall use all reasonable endeavours to prevent any unauthorised access to, or
+                    use of, the Site and, in the event of any such unauthorised access or use, it shall
+                    promptly notify us.</p>
+                <h5 class="text-light bg-theme p-2">THIRD PARTY CONTENT</h5>
+                <p>The Site may provide links to or frame third-party websites or resources and may link
+                    User automatically to sponsors’ or third party’s websites or resources. You
+                    acknowledge and agree that GPT MOVIDUis not responsible or liable for: (i) the availability
+                    or accuracy of such websites or resources; or (ii) the content, products, or services
+                    on or available from such websites or resources. Links to such websites or
+                    resources do not imply any endorsement by GPT MOVIDUof such websites or resources or
+                    the content, products, or services available from such websites or resources. You
+                    acknowledge sole responsibility for and assume all risk arising from your use of any
+                    such websites or resources.You should review the applicable third party’s terms and
+                    policies, including privacy and data gathering practices of any website to which you
+                    navigate.</p>
+                <h5 class="text-light bg-theme p-2">NOTIFICATIONS</h5>
+                <p>You agree to GPT MOVIDU sending you notifications and important messages from time to
+                    time via its websites, mobile applications, and email to provide you a better
+                    experience with the services provided by us. You agree that we may provide notices to you on our
+                    website, or through an email sent to an email address you provided, or
+                    through other means including but not limited to your mobile number, telephone, or
+                    email. You agree to keep your contact information up to date.</p>
+                <h5 class="text-light bg-theme p-2">GRIEVANCE OFFICER</h5>
+                <p>In accordance with Information Technology Act 2000 and rules made there under,
+                    the name and contact details of the Grievance Officer are provided below:</p>
+                <ul>
+                    <li>Name: Mridula Chhetri</li>
+                    <li>Designation: Director</li>
+                    <li>Email: support@movidu.in</li>
+                </ul>
+                <h5 class="text-light bg-theme p-2">NO REPRESENTATIONS OR WARRANTIES</h5>
+                <p>Your access to the site is at your sole risk. Our services are provided on “AS IS” and
+                    “AS AVAILABLE” basis without warranties of any kind, either express or implied,
+                    including, but not limited to, implied warranties of merchantability, fitness for a
+                    particular purpose, title, and non-infringement. GPT MOVIDU makes no representation as
+                    to the completeness or accuracy of the information provided on the Site. GPT MOVIDU
+                    does not endorse or represent the reliability or accuracy of any content or
+                    information distributed through or accessed from the Site, and has not performed
+                    any investigation into such information.</p>
+                <p>To the extent provided by law, GPT MOVIDU assumes no liability or responsibility for any
+                    errors or omissions in the content of the Site. GPT MOVIDU has not reviewed all of the
+                    links provided on the Site and is not responsible for the content of any off-Site pages.
+                    Clicking on hyperlinks and visiting any off-Site pages is done at your own risk.</p>
+                <h5 class="text-light bg-theme p-2">CHANGE OR TERMINATION</h5>
+                <p>We may, without prior notice, change the Site, stop providing the Site, applications or
+                    services, or create usage limits for the Site. We may permanently or temporarily
+                    terminate or suspend your access to the Site without notice or liability, for any reason
+                    or for no reason, including if in our sole determination you violate any provision of
+                    these Terms of Use. Upon termination of these Terms of Use or your access to the
+                    Site for any reason or no reason, you will continue to be bound by these Terms of
+                    Use which, by their nature, should survive termination, including without limitation
+                    ownership provisions, warranty disclaimers, indemnity, and limitations of liability.</p>
+                <h5 class="text-light bg-theme p-2">LIMITATION OF LIABILITY</h5>
+                <p>TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, NEITHER GPT MOVIDUNOR
+                    ITS AFFILIATES WILL BE LIABLE UNDER ANY THEORY OF LIABILITY (WHETHER IN
+                    CONTRACT, TORT, NEGLIGENCE, OR OTHERWISE) FOR ANY INDIRECT, INCIDENTAL,
+                    SPECIAL, CONSEQUENTIAL, PUNITIVE, OR EXEMPLARY DAMAGES, INCLUDING,
+                    DAMAGES FOR LOSS OF REVENUES, PROFITS, GOODWILL, USE, DATA, OR OTHER
+                    INTANGIBLE LOSSES (EVEN IF SUCH PARTIES WERE ADVISED OF, KNEW OF, OR
+                    SHOULD HAVE KNOWN OF THE POSSIBILITY OF SUCH DAMAGES), ARISING FROM
+                    OR RELATING TO THE SITES OR SERVICES OR THESE TERMS OF USE.</p>
+                <h5 class="text-light bg-theme p-2">INDEMNIFICATION</h5>
+                <p>User agrees to indemnify, defend and hold harmless GPT MOVIDU and its Affiliates from
+                    and against any and all claims, liabilities, damages, losses, costs, expenses, and fees
+                    of any kind (including reasonable attorneys’ fees and legal costs), arising from or
+                    relating to: (a) any information (including User Content or any other content) that
+                    User or anyone using User’s account submits, posts, or transmits on or through the
+                    Sites or Services; (b) the use of the Sites or Services by User or anyone using User’s
+                    account; (c) the violation of these Terms of Use by User or anyone using User’s
+                    account; or (d) the violation of any rights of any third party, including intellectual
+                    property, privacy, publicity, or other proprietary rights by User or anyone using User’s
+                    account.</p>
+                <h5 class="text-light bg-theme p-2">JURISDICTION</h5>
+                <p>The Terms of Use shall be governed by the laws of India, and the courts at
+                    Bengaluru, India shall have exclusive jurisdiction with respect to any dispute arising
+                    hereunder</p>
+                <h5 class="text-light bg-theme p-2">INTERNATIONAL USE</h5>
+                <p>The Site is controlled and operated from within India. GPT MOVIDU makes no
+                    representation that the Site is appropriate or available in locations outside of India.
+                    Those who choose to access the Site or use our services from other locations do so
+                    at their own risk and are responsible for compliance with applicable laws.</p>
+                <h5 class="text-light bg-theme p-2">GENERAL</h5>
+                <p>The failure of GPT MOVIDU to enforce any right or provision of these Terms of Use will not
+                    constitute a waiver of future enforcement of that right or provision. The waiver of any
+                    such right or provision will be effective only if in writing and signed by a duly
+                    authorised representative of GPT MOVIDU. Except as expressly set forth in these Terms of
+                    Use, the exercise by either party of any of its remedies under these Terms of Use will
+                    be without prejudice to its other remedies under these Terms of Use or otherwise. If
+                    for any reason a court of competent jurisdiction, as applicable, of competent
+                    jurisdiction finds any provision of these Terms of Use invalid or unenforceable, that
+                    provision will be enforced to the maximum extent permissible and the other
+                    provisions of these Terms of Use will remain in full force and effect.</p>
+                <h5 class="text-light bg-theme p-2">MISCELLANEOUS</h5>
+                <p>Except as expressly provided in these Terms of Use, there shall be no third-party
+                    beneficiaries to the Terms of Use. GPT MOVIDU shall have the right to assign its rights or
+                    delegate any of its responsibilities under these Terms of Use to an affiliate or in
+                    connection with a merger, consolidation or reorganisation of GPT MOVIDU for the sale of
+                    substantially all of its assets.</p>
+                <p>In the event that any provision of this Agreement, or the application thereof, becomes
+                    or is declared by a court of competent jurisdiction to be illegal, void or unenforceable,
+                    the remainder of this Agreement will continue in full force and effect and the
+                    application of such provision to other persons or circumstances will be interpreted
+                    so as reasonably to effect the intent of the parties hereto.</p>
+                <p>This Agreement constitutes the entire agreement between GPT MOVIDU and User
+                    regarding the subject matter hereof, and supersedes any previous arrangement,
+                    understanding or agreement between the parties, written or oral, relating to the
+                    subject matter hereof.</p>
+                <p>Not with standing anything to the contrary herein, GPT MOVIDU will not be held liable for
+                    any delay or failure in performance or non-availability of the services resulting,
+                    directly or indirectly, from acts of nature, events, omissions, accidents or causes
+                    beyond its reasonable control, including, but not limited to, internet failure, network
+                    or computer equipment failures, telecommunication equipment failure, electrical
+                    power failures, strikes, lock-outs or other industrial disputes, labour disputes, riots,
+                    insurrections, civil disturbances, shortages of labour or materials, fires, floods, storms,
+                    explosions, breakdown of plant or machinery, acts of God, war, governmental
+                    actions or orders, orders of domestic or foreign courts or tribunals.</p>
+                <h5 class="text-light bg-theme p-2">ONLINE INTERNSHIP</h5>
+                <p><b>SCOPE</b></p>
+                <p>"The fees that we charge the students is only for mentorship and using our platform
+                    and not the internship itself. GPT MOVIDU does not charge any amount for the internship
+                    project phase as it is completely complimentary."</p>
+                <h5 class="text-light bg-theme p-2">OFFLINE INTERNSHIP</h5>
+                <p><b>SCOPE</b></p>
+                <p>"The fees that we charge the students is for the offline workshops that are
+                    conducted and not for the online project phase. The online project phase would be
+                    complimentary for all the participants in the offline workshop."</p>
+                <h5 class="text-light bg-theme p-2">PURPOSE</h5>
+                <p>This policy governs the refunds process and will address matters arising out of
+                    situations that may require processing of refunds.</p>
+                <p>SCOPE</p>
+                <p>The policy encompasses employees, students, and candidates that are in the
+                    ecosystem of requesting and/or processing refunds.
+                    This policy does not cover situations where refunds are not approved.</p>
+                <p>There are two components to internship, certification and job guarantee program
+                    fees:</p>
+                <ul>
+                    <li>Registration Charges.</li>
+                    <li>Program Fees.</li>
+                </ul>
+                <h5 class="text-light bg-theme p-2">PROCEDURE</h5>
+                <h5><u>Internship Programs:</u></h5>
+                <h6>Self Paced Internship Program:</h6>
+                <p>All self paced internship programs are non-refundable and non-transferrable under
+                    any circumstances. Full refunds will be issued only if GPT MOVIDU cancels the complete
+                    program</p>
+                <h6>Online Internship Program:</h6>
+                <p>All online internship programs are non-refundable and non-transferrable under any
+                    circumstances. Full refunds will be issued only if GPT MOVIDU cancels the complete
+                    program</p>
+                <h6>Offline Internship Program: /Hybrid Internship Program:</h6>
+                <p>All offline and Hybrid internship programs are non-refundable and non-transferrable
+                    under any circumstances. Full refunds will be issued only if GPT MOVIDU cancels the
+                    complete program</p>
+                <h5><u>Certification Programs:</u></h5>
+                <h6>Self Placed Certification Programs:</h6>
+                <p>Self paced certification programs are refundable only if refund request is raised up to
+                    1 week before the date of commencement and the student has not accessed the
+                    LMS. Any refund requests post LMS access will be strictly denied. Please note that
+                    the registration charges which are 20% of the course fee or Rs.1000/- (whichever is
+                    higher) are non refundable at any point in time.</p>
+                <h6>Online Certification Program:</h6>
+                <p>All online certification programs are non-refundable and non-transferrable under any
+                    circumstances. Full refunds will be issued only if GPT MOVIDU cancels the entire program</p>
+                <h6>Offline Certification Program:</h6>
+                <p>Offline certification programs are refundable only if a refund request is raised 1 week
+                    prior to the commencement of classes and the student has not accessed the LMS.
+                    Please note that the registration charges which are 20% of the course fee or
+                    Rs.1000/- (whichever is higher) are non refundable at any point in time.</p>
+                <h6>Hybrid Certification Program:</h6>
+                <p>Hybrid certification programs are non-refundable and non-transferrable under any
+                    circumstances. Full refunds will be issued only if GPT MOVIDU cancels the entire program.</p>
+                <h5><u>Job Guarantee Programs:</u></h5>
+                <h6>Self Paced Job Guarantee (Assistance) Program:</h6>
+                <p>Self paced programs are refundable only if refund request is raised up to 1 week
+                    before the date of commencement and the student has not accessed the LMS. Any
+                    refund requests post LMS access will be strictly denied. Please note that the
+                    registration charges which are 20% of the course fee or Rs.1000/- (whichever is
+                    higher) are non refundable at any point in time.</p>
+                <h6>Online Guarantee Program:</h6>
+                <p>All online job guarantee programs are non-refundable and non-transferrable under
+                    any circumstances. The refunds will happen only if student has successfully
+                    completed the course but is unable to secure a job provided:</p>
+                <ul>
+                    <li>85% attendance for the classes held.</li>
+                    <li>All major projects, minor projects and case studies have been successfully
+                        completed.</li>
+                    <li>Exams or certification requirements for the course have been met.</li>
+                    <li>Full refunds will be issued only if GPT MOVIDU cancels the entire program.</li>
+                </ul>
+                <h5 class="text-light bg-theme p-2">OFFLINE CERTIFICATION PROGRAM</h5>
+                <p>Offline certification programs are refundable only if a refund request is raised 1 week
+                    prior to the commencement of classes and the student has not accessed the LMS.
+                    Please note that the registration charges which is 20% of the course fee or Rs.1000/-
+                    (whichever is higher) are non refundable at any point in time</p>
+                <h6>Hybrid Certification Program:</h6>
+                <p>Hybrid certification programs are non-refundable and non-transferrable under any
+                    circumstances. Full refunds will be issued only if GPT MOVIDU cancels the entire program.</p>
+                <p><b>Process for Refund:</b></p>
+                <p>For all refunds please contact us at: support@GPT MOVIDU.in</p>
+                <p>The refunds team will contact you within 2-5 business days.</p>
+                <p>For approved refund cases Refunds Form need to be filled.</p>
+                <p>In 7-10 business days a refund is issued.</p>
+                <p>How Your Refund is Returned:</p>
+                <ul>
+                    <li>If your payment came from your card, it will be refunded to that card. Depending on
+                        your card issuer, it may take up to 30 days to complete a refund.</li>
+                    <li>If your payment came from your bank account, it will be refunded to that bank
+                        account.</li>
+                    <li>If your payment came from some other source (instamojo, phonepe, googlepay etc)
+                        it will be refunded back to the same source.</li>
+                    <li>Please note no cash refunds are made under any circumstances.</li>
+                </ul>
+                <h5 class="text-light bg-theme p-2">CHANGE OF COURSE</h5>
+                <p>GPT MOVIDU allows you to change your course to an alternative course only once using
+                    the following guidelines:</p>
+                <ul>
+                    <li>GPT MOVIDU is notified in writing at least 1 week before the commencement of the
+                        original course.</li>
+                    <li>The alternative course has seats available and will be finished within 1 month of the
+                        original course finish date.</li>
+                    <li>If switching to a course of a higher value, students are required to pay the amount
+                        difference. However, if switching to a course of a lower value, GPT MOVIDU is not liable to
+                        pay the amount difference. A processing fee of Rs. 500/- needs to be paid within 3
+                        days after GPT MOVIDU accepts change of course request, failing which course change
+                        request will be cancelled and no further request will be entertained.</li>
+                    <li>Course change is allowed only once during the program.</li>
+                </ul>
+                <h5 class="text-light bg-theme p-2">PROCESS FOR CHANGE OF COURSE</h5>
+                <ul>
+                    <li>Contact GPT MOVIDU at support@movidu.in with your course change request.</li>
+                    <li>Once approved, fill up the “Course Change Form” and submit it within 3 business
+                        days.</li>
+                    <li>Pay the processing fees + difference in course costs (if applicable) and submit the
+                        receipt to “ support@movidu.in ”.</li>
+                    <li>In 5-7 business days, you will get a confirmation for the course change request.</li>
+                </ul>
+                <h5 class="text-light bg-theme p-2">RESCHEDULE</h5>
+                <p>Rescheduling by GPT MOVIDU Technology are governed by the following guidelines:</p>
+                <ul>
+                    <li>If a course doesn’t begin within 10 business days of published commencement date,
+                        a student is entitled to either a full refund or can choose to join a different
+                        batch/course.</li>
+                    <li>GPT MOVIDU will make all possible efforts to conduct a course. However, in the event of a
+                        course being rescheduled due to unforeseen delays on our end, GPT MOVIDU Technology
+                        is only responsible for the cost of the course. Any travel, logistics or personal
+                        expenses incurred due to this program won’t be refunded.</li>
+                    <li>Rescheduling request by customer are governed by the following guidelines:
+                        <ul>
+                            <li>The reschedule request has to be made at least 7 business days before the
+                                commencement of the course.</li>
+                            <li>The rescheduled date should be within 90 days of the initial commencement date.</li>
+                            <li>Rescheduling will not allow the customer to change their course.</li>
+                            <li>The reschedule is subject to availability of seats.</li>
+                            <li>A rescheduling fee of Rs. 500/- must be paid within 5 business days from the date of
+                                approval</li>
+                        </ul>
+                    </li>
+                    <li>Process for Rescheduling of Course:
+                        <ul>
+                            <li>Contact GPT MOVIDU at support@GPT MOVIDU.in with your course rescheduling request</li>
+                            <li>Once approved, fill up the “Reschedule Course Form” and submit it within 3 business
+                                days.</li>
+                            <li>Pay the processing fees + difference in course costs (if applicable) and submit the
+                                receipt to “ support@GPT MOVIDU.in ”In 5-7 business days you will get a confirmation for
+                                the course reschedule request.</li>
+                            <li>If a rescheduled course is of a higher value, students are required to pay the amount
+                                difference. However, if switching to a course of a lower value, GPT MOVIDU is not liable to
+                                pay the amount difference. A processing fee of Rs. 500/- needs to be paid within 3
+                                days after GPT MOVIDU accepts reschedule request, failing which reschedule request will
+                                be cancelled and no further request will be entertained.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h5 class="text-light bg-theme p-2">CANCELLATION</h5>
+                <p>GPT MOVIDU Technology reserves the right to cancel any session or change the location
+                    of the session for reasons such as Instructor unavailability, insufficient participants
+                    or force majeure events such as earthquakes, fire, flood, riots, curfew, bandh, protest,
+                    strike, civil unrest etc. Please note our cancellation policy is governed by the
+                    following:</p>
+                <ul>
+                    <li>In case GPT MOVIDUTechnology cancels a workshop/seminar/conference, 100% refund
+                        will be paid to the participants.</li>
+                    <li>In case GPT MOVIDU Technology changes the location of the event, arrangements of a
+                        similar infrastructure as previously decided will be executed.</li>
+                    <li>No personal expenses due to the change of location will be borne by
+                        GPT MOVIDUTechnology under any circumstances.</li>
+                </ul>
+                <p>GPT MOVIDU Technology reserves the right to either accommodate students in a similar
+                    infrastructure as originally decided or pay compensation GPT MOVIDU Technology deems
+                    fit for the same.</p>
+                <p><b>User Content</b></p>
+                <p>The Services enable you to share your content, presentations, quizzes, assignments,
+                    assessments, projects which you share, submit, posts you make in the forums, and
+                    the like ("User Content"), with GPT MOVIDU, instructors, and/or other users. You retain all
+                    intellectual property rights in, and are responsible for, the User Content you create
+                    and share. User Content does not include course content or other materials made
+                    available on or placed on to the GPT MOVIDU platform by or on behalf of Content Providers
+                    or their instructors using the Services or Content Offerings. As between GPT MOVIDU and
+                    Content Providers, such Content Offerings are governed by the relevant agreements
+                    in place between GPT MOVIDU and Content Providers.</p>
+                <p><b>How GPT MOVIDU and Others May Use User Content</b></p>
+                <p>You grant GPT MOVIDU a fully transferable, royalty- free licence, sublicence, to the extent that you
+                    provide User Content, you grant GPT MOVIDU a fully-transferable,
+                    royalty-free, perpetual, sublicensable, non-exclusive, worldwide licence to copy,
+                    distribute, modify, create derivative works based on, publicly perform, publicly
+                    display, and otherwise use the User Content. This licence includes granting GPT MOVIDU
+                    the right to authorise Content Providers to use User Content with their registered students,
+                    on-campus learners, or other learners independent of the Services. Nothing
+                    in these Terms shall restrict other legal rights GPT MOVIDU may have to User Content, for
+                    example under other licenses. We reserve the right to remove or modify User Content
+                    for any reason, including User Content that we believe violates these Terms or other
+                    policies including our Acceptable Use Policy and Code of Conduct.</p>
+                <p><b>Feedback</b></p>
+                <p>We welcome your suggestions, ideas, comments, and other feedback regarding the
+                    Services ("Feedback"). By submitting any Feedback, you grant us the right to use the
+                    Feedback without any restriction or any compensation to you. By accepting your
+                    Feedback, GPT MOVIDU does not waive any rights to use similar or related Feedback
+                    previously known to GPT MOVIDU, developed by our employees, contractors, or obtained
+                    from other sources.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <section class="contact-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="contact-content">
+                        <a href="index.html"><img src="images/inmovidulogowhite.png" alt="logo"></a>
+                        <p>GPT MOVIDU is a one stop platform for
+                            all your hiring requirements </p>
+                        <div class="hr"></div>
+                        <h6>1018-993, 20th Cross Rd, Sector 7, HSR Layout, Bengaluru, Karnataka 560102 </h6>
+                        <h6>+91-8296507779<span>|</span>+91-8296507779
+                            <span>|</span>support@movidu.in
+                        </h6>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-6 mt-5 pt-5 ">
+                    <h4>Documents</h4>
+                    <ul class="pl-0" type="none">
+                        <li><a href="t&c.html">Terms & Conditions</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-use.html">Terms of Use</a></li>
+                        <li><a href="refund-policy.html">Refund Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; 2024 <img src="images/inmovidulogowhite.png" alt="logo"> All Rights Reserved.
+        </p>
+    </footer>
+    <!-- End -->
+    <!-- Bootstarp JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

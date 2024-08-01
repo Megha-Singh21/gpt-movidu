@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/moviduicon.png" />
+    <title>Hire Interns &amp; Freshers | Post Internships &amp; Jobs | GPT MOVIDU | Privacy Policy</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+    <div class="modal " id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                    </button>
+                </div>
+                <div class="modal-body ">
+                    <div id="user-menu-container">
+                        <h5><b>Login</b></h5>
+                    </div>
+                    <form role="form" id="modal-login-form" method="POST">
+                        <input type="hidden" name="csrf_test_name" value="93628191c18294f5d8eff827105b2ee4" />
+                        <div class="form-group">
+                            <label for="email" class="control-label">Email</label>
+                            <input type="email" class="form-control" id="modal_email" tabindex="1" name="email"
+                                placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="control-label">Password</label>
+                            <input type="password" class="form-control" id="modal_password" tabindex="2" name="password"
+                                placeholder="Must be atleast 6 characters">
+                        </div>
+                        <div class="forgot_password">
+                            <a class="text-primary" data-toggle="modal" data-target="#forgot-password-modal"
+                                data-dismiss="modal" id="forgot-password">Forgot
+                                password?</a>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary" id="modal_login_submit"
+                                tabindex="3">Login</button>
+                        </div>
+                        <div class="form-group new_to_internshala">
+                            <label>
+                                New to GPT MOVIDU? Register <a href="index.html">Company</a>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal " id="forgot-password-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                    </button>
+                </div>
+                <div class="modal-body ">
+                    <div id="user-menu-container">
+                        <h5><b>Forgot Password</b></h5>
+                    </div>
+                    <form role="form" id="modal-login-form" method="POST">
+                        <input type="hidden" name="csrf_test_name" value="93628191c18294f5d8eff827105b2ee4" />
+                        <div class="sub_heading">
+                            Enter your registered Email ID to receive new password.
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="control-label">Email</label>
+                            <input type="email" class="form-control" id="modal_email" tabindex="1" name="email"
+                                placeholder="john@example.com">
+                        </div>
+                        <div class="forgot_password float-right">
+                            <a class="text-primary" data-toggle="modal" data-target="#login-modal" data-dismiss="modal"
+                                id="forgot-password">Login?</a>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary" id="modal_login_submit"
+                                tabindex="3">Reset</button>
+                        </div>
+                        <div class="form-group new_to_internshala">
+                            <label>
+                                New to GPT MOVIDU? Register <a href="index.html">Company</a>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="header" class="header_container container-fluid">
+        <div class="max-width-container">
+            <div class='layer'></div>
+
+            <nav class="navbar navbar-expand-md">
+                <div class="brand_container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/movidu-logo.png" width="180px" alt="">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse navbar_desktop">
+                    <ul class="navbar-nav nav_menu_container">
+                        <li class="nav-item">
+                            <a href="blog.html"
+                                class="employer_login_on_registration_page text-warning text-decoration-none fs-6  mr-2">Blog
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#register"
+                                class="employer_login_on_registration_page text-warning text-decoration-none fs-6">Register
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-toggle="modal" data-target="#login-modal"
+                                class="employer_login_on_registration_page">
+                                <button id="header_login_button" class="btn btn-outline-warning">Login</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile_registration_login">
+                    <a href="blog.html"
+                        class="employer_login_on_registration_page text-warning text-decoration-none fs-6 mr-1">Blog
+                    </a>
+                    <a href="#register"
+                        class="employer_login_on_registration_page text-warning text-decoration-none fs-6">Register
+                    </a>
+                    <a data-toggle="modal" data-target="#login-modal" class="employer_login_on_registration_page">
+                        <button id="header_login_button" class="btn btn-outline-warning">Login</button>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="bg-blog1  d-flex justify-content-center align-items-center">
+        <div class="row p-3">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h1 class="text-center text-light">From Job Postings to AI Recommendations: The Evolution of Recruitment
+                </h1>
+                <p class="text-center text-light">The world of recruitment has undergone a dramatic transformation over
+                    the past few decades. Gone are the days when a job posting in the local newspaper was enough to
+                    attract the best talent. Today, the hiring landscape is dominated by digital platforms, social
+                    media, and most importantly, artificial intelligence (AI). This evolution has significantly altered
+                    how companies find, evaluate, and hire new employees.
+                </p>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+    <div class="container pt-5 pb-5">
+        <p>In the early stages of recruitment, the process was manual and time-consuming. Recruiters had to sift through
+            piles of resumes, conduct countless interviews, and rely heavily on gut instinct to make hiring decisions.
+            While this method worked to some extent, it was far from efficient and often led to biased or inconsistent
+            results.</p>
+        <p>The introduction of online job boards in the late 1990s marked the first major shift in recruitment.
+            Companies could now reach a larger audience by posting job openings online, while job seekers had a
+            centralized place to find opportunities. This development made the hiring process more accessible and
+            streamlined, but it still relied on manual resume screening and subjective decision-making.</p>
+        <p>The real game-changer came with the advent of AI in recruitment. AI-driven tools can analyze vast amounts of
+            data quickly and accurately, revolutionizing the way companies identify and select candidates. These tools
+            can scan resumes for relevant keywords, evaluate online profiles, and even assess candidates’ skills through
+            automated tests. By doing so, AI helps recruiters identify the best candidates based on objective criteria,
+            significantly reducing the time and effort required for the initial screening process.</p>
+        <p>One of the most significant advantages of AI in recruitment is its ability to minimize unconscious bias.
+            Traditional hiring methods are susceptible to personal biases, which can inadvertently influence hiring
+            decisions. AI, on the other hand, evaluates candidates purely based on their qualifications and experience,
+            promoting a fairer and more inclusive hiring process. This shift towards merit-based hiring is crucial for
+            building diverse teams that drive innovation and success.</p>
+        <p>Furthermore, AI recommendations enhance the candidate experience. Job seekers benefit from personalized job
+            recommendations tailored to their skills and preferences. This not only increases their chances of finding a
+            suitable position but also saves them time by narrowing down their job search. For recruiters, AI tools can
+            provide valuable insights into candidates’ potential fit within the company culture, helping them make more
+            informed decisions.</p>
+        <p>The evolution from traditional job postings to AI recommendations signifies a new era in recruitment. As
+            technology continues to advance, the hiring process will become even more efficient and data-driven.
+            Companies that embrace these changes will be better equipped to attract and retain top talent in an
+            increasingly competitive job market.</p>
+        <p>In conclusion, the journey from job postings to AI recommendations highlights the remarkable progress in
+            recruitment practices. By adopting AI-driven tools and strategies, organizations can ensure a more
+            efficient, unbiased, and candidate-centric approach to hiring. This evolution is not just about keeping up
+            with technological advancements but about creating a recruitment process that is fair, inclusive, and
+            aligned with the needs of both employers and job seekers.</p>
+    </div>
+
+    <!-- Footer -->
+    <section class="contact-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="contact-content">
+                        <a href="index.html"><img src="images/inmovidulogowhite.png" alt="logo"></a>
+                        <p>GPT MOVIDU is a one stop platform for
+                            all your hiring requirements </p>
+                        <div class="hr"></div>
+                        <h6>1018-993, 20th Cross Rd, Sector 7, HSR Layout, Bengaluru, Karnataka 560102 </h6>
+                        <h6>+91-8296507779<span>|</span>+91-8296507779
+                            <span>|</span>support@movidu.in
+                        </h6>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-6 mt-5 pt-5 ">
+                    <h4>Documents</h4>
+                    <ul class="pl-0" type="none">
+                        <li><a href="t&c.html">Terms & Conditions</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-use.html">Terms of Use</a></li>
+                        <li><a href="refund-policy.html">Refund Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; 2024 <img src="images/inmovidulogowhite.png" alt="logo"> All Rights Reserved.
+        </p>
+    </footer>
+    <!-- End -->
+    <!-- Bootstarp JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

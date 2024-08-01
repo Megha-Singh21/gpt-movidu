@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.row{
+    margin-right: 0;
+}
+.row>*{
+    padding-right: 0;
+    padding-left: 0;
+}
+.bg-section-1{
+    padding-left: 100px;
+    height: 600px;
+}
+.video-img{
+    position: absolute;
+    z-index: 2;
+    left: 20%;
+    top: 9.5%;
+}
+.bg-blog1{
+    background-image: url('images/bg-blog.avif');
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+.bg-blog2 .card-img{
+    height: 200px;
+    overflow: hidden;
+}
+.bg-blog2 .card-img img{
+    height: 100%;
+}
+
+@media screen and (max-width: 600px){
+    .bg-section-1{
+        background-image: none;
+        padding-left: 0;
+        height: fit-content;
+    }
+    .registration-content{
+        overflow: hidden;
+       
+        max-width: auto;
+    }
+    .padding-m{
+        padding-left: 0;
+    }
+    .padding-l{
+        padding-left: 30px !important;
+    }
+    .contact-area{
+        padding-left: 10px;
+    }
+    .contact-area .mt-5{
+        margin-top: 0 !important;
+    }
+    .contact-area .pt-5{
+        padding-top: 20px !important;
+    }
+}

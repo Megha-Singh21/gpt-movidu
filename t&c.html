@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/moviduicon.png" />
+    <title>Hire Interns &amp; Freshers | Post Internships &amp; Jobs | GPT MOVIDU | Terms & Conditions</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+    <div class="modal " id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                    </button>
+                </div>
+                <div class="modal-body ">
+                    <div id="user-menu-container">
+                        <h5><b>Login</b></h5>
+                    </div>
+                    <form role="form" id="modal-login-form" method="POST">
+                        <input type="hidden" name="csrf_test_name" value="93628191c18294f5d8eff827105b2ee4" />
+                        <div class="form-group">
+                            <label for="email" class="control-label">Email</label>
+                            <input type="email" class="form-control" id="modal_email" tabindex="1" name="email"
+                                placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="control-label">Password</label>
+                            <input type="password" class="form-control" id="modal_password" tabindex="2" name="password"
+                                placeholder="Must be atleast 6 characters">
+                        </div>
+                        <div class="forgot_password">
+                            <a class="text-primary" data-toggle="modal" data-target="#forgot-password-modal"
+                                data-dismiss="modal" id="forgot-password">Forgot
+                                password?</a>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary" id="modal_login_submit"
+                                tabindex="3">Login</button>
+                        </div>
+                        <div class="form-group new_to_internshala">
+                            <label>
+                                New to GPT MOVIDU? Register <a href="index.html">Company</a>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal " id="forgot-password-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                    </button>
+                </div>
+                <div class="modal-body ">
+                    <div id="user-menu-container">
+                        <h5><b>Forgot Password</b></h5>
+                    </div>
+                    <form role="form" id="modal-login-form" method="POST">
+                        <input type="hidden" name="csrf_test_name" value="93628191c18294f5d8eff827105b2ee4" />
+                        <div class="sub_heading">
+                            Enter your registered Email ID to receive new password.
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="control-label">Email</label>
+                            <input type="email" class="form-control" id="modal_email" tabindex="1" name="email"
+                                placeholder="john@example.com">
+                        </div>
+                        <div class="forgot_password float-right">
+                            <a class="text-primary" data-toggle="modal" data-target="#login-modal" data-dismiss="modal"
+                                id="forgot-password">Login?</a>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary" id="modal_login_submit"
+                                tabindex="3">Reset</button>
+                        </div>
+                        <div class="form-group new_to_internshala">
+                            <label>
+                                New to GPT MOVIDU? Register <a href="index.html">Company</a>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="header" class="header_container container-fluid">
+        <div class="max-width-container">
+            <div class='layer'></div>
+
+            <nav class="navbar navbar-expand-md">
+                <div class="brand_container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/movidu-logo.png" width="180px" alt="">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse navbar_desktop">
+                    <ul class="navbar-nav nav_menu_container">
+                        <li class="nav-item">
+                            <a data-toggle="modal" data-target="#login-modal"
+                                class="employer_login_on_registration_page">
+                                <button id="header_login_button" class="btn btn-outline-warning">Login</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile_registration_login">
+                    <a data-toggle="modal" data-target="#login-modal" class="employer_login_on_registration_page">
+                        <button id="header_login_button" class="btn btn-outline-warning">Login</button>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container pt-3 pb-3">
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="text-light bg-theme p-2">TERMS AND CONDITIONS</h4>
+                <p>These terms and conditions (“terms of use”) state important requirements regarding your use of
+                    GPT MOVIDU TECHNOLOGY PRIVATE LIMITED website services and your relationship with GPT MOVIDU
+                    TECHNOLOGY PRIVATE LIMITED. You should read them carefully as they contain important
+                    information and instructions such as how long it lasts, fees for early termination, our rights to
+                    change
+                    its conditions, limitations of liability, privacy, and settlement of disputes by arbitration instead
+                    of in
+                    court. If you accept this agreement, it will apply to all your service plans provided by GPT MOVIDU
+                    TECHNOLOGY PRIVATE LIMITED, including all your existing plans. Your acceptance of these terms
+                    & conditions will be implied by the use of the GPT MOVIDU TECHNOLOGY PRIVATE LIMITED
+                    service.</p>
+                <p>(The “Terms, Conditions and Policies” are subject to change)</p>
+                <h5 class="text-light bg-theme p-2">“AGREEMENT”</h5>
+                <p>These terms and conditions, together with each accepted plan order submitted by you, any additional
+                    terms mentioned for your plan order and the privacy policy, state the entire agreement between you
+                    and GPT MOVIDU TECHNOLOGY PRIVATE LIMITED (the “agreement”). The plan order will form the part
+                    of the “agreement” only if the same has been acknowledged by GPT MOVIDU TECHNOLOGY PRIVATE
+                    LIMITED in writing or by an e-mail. You must agree to the terms and conditions in order to be
+                    eligible
+                    to use the GPT MOVIDU TECHNOLOGY PRIVATE LIMITED Portal (defined below), or obtain services.</p>
+                <h5 class="text-light bg-theme p-2">DEFINITIONS</h5>
+                <p>Certain terms defined in these Terms and Conditions are also used in the Privacy Policy and are
+                    incorporated by reference to these Terms and Conditions.</p>
+                <h5 class="text-light bg-theme p-2">“Content”</h5>
+                <p>Software, Materials, Solutions, Services and other related information are collectively referred to
+                    as
+                    “Content.”</p>
+                <h5 class="text-light bg-theme p-2">“You” or “you”</h5>
+                <p>“You” means you individually, any person, including any employer/company that you are acting on
+                    behalf of or company /employer who has purchased these services/software for your consumption</p>
+                <h5 class="text-light bg-theme p-2">“GPT MOVIDU TECHNOLOGY PRIVATE LIMITED”</h5>
+                <p>Trademark “GPT MOVIDU TECHNOLOGY PRIVATE LIMITED”, pursuant to licence issued by GPT MOVIDU
+                    TECHNOLOGY PRIVATE LIMITED, all rights, title or interest are reserved by GPT MOVIDU
+                    TECHNOLOGY PRIVATE LIMITED.</p>
+                <h5 class="text-light bg-theme p-2">“GPT MOVIDU TECHNOLOGY PRIVATE LIMITED Certified expert(s)”</h5>
+                <p>“GPT MOVIDU TECHNOLOGY PRIVATE LIMITED Certified expert(s)” means experts and specialists
+                    certified by GPT MOVIDU TECHNOLOGY PRIVATE LIMITED to perform the Services provided under this
+                    Agreement</p>
+                <h5 class="text-light bg-theme p-2">“GPT MOVIDU TECHNOLOGY PRIVATE LIMITED”</h5>
+                <p>“GPT MOVIDU TECHNOLOGY PRIVATE LIMITED” shall mean all the learning management ecosystem
+                    which includes dashboard, website, etc.</p>
+                <h5 class="text-light bg-theme p-2">“Subscription Based Plans” or “Subscriptions”</h5>
+                <p>“Subscription Based Plans” or “Subscription(s)” are tenured Subscription plans offered by GPT MOVIDU
+                    TECHNOLOGY PRIVATE LIMITED that are active for a specified period and will not include any
+                    incident based plans such as “Per Incident Plan” or the like.</p>
+                <h5 class="text-light bg-theme p-2">“Services”</h5>
+                <p>All references to “Services” refer to any GPT MOVIDU TECHNOLOGY PRIVATE LIMITED offerings that
+                    you enter into with GPT MOVIDU TECHNOLOGY PRIVATE LIMITED through use of the GPT MOVIDU
+                    TECHNOLOGY PRIVATE LIMITED website located at www.GPT MOVIDU.in or by calling the GPT MOVIDU
+                    TECHNOLOGY PRIVATE LIMITED and phone number mentioned on the GPT MOVIDU TECHNOLOGY
+                    PRIVATE LIMITED. These Terms of Use govern all plans available through the GPT MOVIDU
+                    TECHNOLOGY PRIVATE LIMITED website located at www.GPT MOVIDU.in , and any use of the GPT MOVIDU
+                    TECHNOLOGY PRIVATE LIMITED. In the event of any conflict these Terms of Use control any valid
+                    Plan Order form that you submit requesting Services.</p>
+                <h5 class="text-light bg-theme p-2">“Materials”</h5>
+                <p>“Materials” means any webcasts, download areas, white papers, press releases, datasheets, FAQs,
+                    product information, quick reference guides, or other works of any kind that are made available to
+                    download from the GPT MOVIDU TECHNOLOGY PRIVATE LIMITED are the proprietary and copyrighted
+                    work of GPT MOVIDU TECHNOLOGY PRIVATE LIMITED. The definition of “Materials” doesn’t include the
+                    design or layout of the GPT MOVIDU TECHNOLOGY PRIVATE LIMITED owned, operated, licensed or
+                    controlled website.</p>
+                <h5 class="text-light bg-theme p-2">“Software”</h5>
+                <p>“Software” means a computer program of any kind, whether owned by GPT MOVIDU TECHNOLOGY
+                    PRIVATE LIMITED or a third party, whether delivered via download, CD, other media, or other delivery
+                    method, including client and/or network security software. Elements of the Software are protected
+                    under copyright, trade secret, unfair competition, and other laws. Software includes both GPT MOVIDU
+                    TECHNOLOGY PRIVATE LIMITED Software and any third party Software. Your use of Software is
+                    subject to the respective agreements such as a license agreement or user agreement that
+                    accompanies or is included with the Software, ordering documents, exhibits, and other terms and
+                    conditions that apply (“License Terms”).</p>
+                <h5 class="text-light bg-theme p-2">“Per Incident Plan”</h5>
+                <p>“Per Incident Plan” shall mean the services package offered either by direct payment or as per signed
+                    contract with the Company/employer and GPT MOVIDU TECHNOLOGY PRIVATE LIMITED.</p>
+                <h5 class="text-light bg-theme p-2">“Subscription Based Plans” or “Subscription(s)”</h5>
+                <p>“Subscription Based Plans” or “Subscription(s)” are tenured Subscription plans offered by GPT MOVIDU
+                    TECHNOLOGY PRIVATE LIMITED that is active for a specified period and will not include any
+                    incident based plans such as “Per Incident Plan” or the like</p>
+                <h5 class="text-light bg-theme p-2">“Plan Order”</h5>
+                <p>“Plan Order” means the plan order for the purchase and sale of Services, which are further governed
+                    by Standard Purchase Terms that are attached in the Purchase Order.</p>
+                <h5 class="text-light bg-theme p-2">“Supplier”</h5>
+                <p>“Supplier” means any third party service provider that GPT MOVIDU TECHNOLOGY PRIVATE LIMITED
+                    undertakes for provision of the services as mentioned in the Plan Order</p>
+                <h5 class="text-light bg-theme p-2">“User”</h5>
+                <p>“User” is defined as an individual who has been granted access by GPT MOVIDU TECHNOLOGY on email
+                    either by making direct payment or through contract signed with any corporate sector/institution/NGO
+                    etc.</p>
+                <h5 class="text-light bg-theme p-2">SUBMISSION OF PLAN ORDERS; SERVICE PLANS</h5>
+                <p>You may order Services by submitting Plan Orders through the GPT MOVIDU TECHNOLOGY PRIVATE
+                    LIMITED or by calling GPT MOVIDU TECHNOLOGY PRIVATE LIMITED. Once GPT MOVIDU TECHNOLOGY
+                    PRIVATE LIMITED accepts the Plan Order submitted by you, then you will receive an email from
+                    GPT MOVIDU TECHNOLOGY PRIVATE LIMITED at the email address that you provide or have provided
+                    to GPT MOVIDU TECHNOLOGY PRIVATE LIMITED as part of the Registration Process for the Services.
+                    GPT MOVIDU TECHNOLOGY PRIVATE LIMITED and is not responsible for rendering Services in
+                    connection with any Plan Order that has not been accepted. Upon acceptance by GPT MOVIDU
+                    TECHNOLOGY PRIVATE LIMITED of a Plan Order, you will have a Service Plan</p>
+                <h5 class="text-light bg-theme p-2">UNDERTAKING</h5>
+                <p>Subject to the Terms and Conditions, and other terms specific to each Service Plan, GPT MOVIDU
+                    TECHNOLOGY PRIVATE LIMITED will address your query using commercially reasonable efforts in
+                    providing appropriate solutions under the Services. In most cases, GPT MOVIDU TECHNOLOGY
+                    PRIVATE LIMITED will attempt problem diagnosis and a solution through chat, email or other means
+                    as it deems most appropriate under the circumstances. You understand that there will be no liability
+                    for GPT MOVIDU TECHNOLOGY PRIVATE LIMITED. All undertakings under Service Plans are subject to
+                    GPT MOVIDU TECHNOLOGY PRIVATE LIMITED’s limited warranty, which is set forth below. For more
+                    information, please refer to online documentation or call us. You agree to pay all Services Fee and
+                    any other applicable fee/charges as set out in the relevant Plan Order in accordance with the
+                    Payment Terms provided below.</p>
+                <h5 class="text-light bg-theme p-2">PAYMENT</h5>
+                <p>Services against any Plan Order will be available once you have made payment for Services
+                    according to the requirements of the corresponding Plan Order. GPT MOVIDU TECHNOLOGY PRIVATE
+                    LIMITED has no obligation to render Services under any Service Plan if the payments as required
+                    under any Plan Order have not been made.</p>
+                <p>You understand that certain Service Plans may have fee including, but not limited to “Service Fee”
+                    and/or “Activation Fee” payable either on an annual basis (“Annual Payment Plan”) or on a monthly
+                    basis (“Recurring Payment Plan”). Subject to the applicable Term Plan, all payments under the Annual
+                    Plan shall be made upfront at time of commencement of the order. For payments under the Recurring
+                    Payment Plan, apart from the monthly instalments of the Service Fee, payable over a one (1) year
+                    payment term, You shall be charged an additional non-refundable Activation Fee at the time of
+                    registration, as specified in the Plan Order. The fee (including Activation / Setup Fee) will not be
+                    refunded in case of cancellation of the Service Plan unless otherwise stated in the Plan Order. All
+                    fee
+                    under this clause or a relevant Plan Order, is payable at the time of commencement of the Service
+                    Plan.</p>
+                <p>When you purchased the Service, you agreed to a specific price and plan, where such plan may be
+                    for a term of one, two, or three years (“Term Plan”). All terms of Service Fee and/or any other fee
+                    payable under any mode of payment for a Subscription shall be set forth in the applicable Plan
+                    Order.
+                    Similarly, some plans may offer a discount on the Service if you sign up for other GPT MOVIDU
+                    TECHNOLOGY PRIVATE LIMITED services (“Bundle Discount”). You agree to maintain your Service
+                    and the bundled services for the applicable term. If you signed up for a Term Plan or a Bundle
+                    Discount, the price available with those plans is valid until one of the following occurs: (1) the
+                    Term
+                    Plan expires; (2) you drop one of the GPT MOVIDU TECHNOLOGY PRIVATE LIMITED services you were
+                    required to purchase to receive the special rate as notified to GPT MOVIDU TECHNOLOGY PRIVATE
+                    LIMITED; or (3) You terminate the agreement/Service Plan before the expiry of the relevant term.
+                </p>
+                <h5 class="text-light bg-theme p-2">RENEWAL POLICY</h5>
+                <p>You agree and acknowledge that a Subscription under the Recurring Payment Plan will automatically
+                    renew for a month, unless notified otherwise by You (“Auto Renewal”). However, a Subscription under
+                    the Annual Payment Plan does not automatically renew and expires at the end of the applicable Term
+                    Plan. Your credit card will be charged with the amount of the then prevailing subscription charges
+                    as
+                    per the payment option that you selected at the time of registering with GPT MOVIDU TECHNOLOGY
+                    PRIVATE LIMITED. If you would like to opt out of the Auto Renewal, please call us and speak with
+                    one of our customer service representative at least 30 days prior to your subscription end date to
+                    discontinue your service.</p>
+                <h5 class="text-light bg-theme p-2">REFUND POLICY</h5>
+                <p>For subscription based plans, a full refund will be issued if GPT MOVIDU TECHNOLOGY PRIVATE
+                    LIMITED hasn’t been able to meet a single requirement for you within the first 15 days of the
+                    subscription. If there are one or more resolved requirements, the fees for the Subscription Service
+                    will
+                    not be refundable. Notwithstanding this GPT MOVIDU TECHNOLOGY PRIVATE LIMITED may, at its sole
+                    discretion and on a case by case basis, agree to a refund of Subscription fees after deducting
+                    charges
+                    for servicing the Customer. You will be eligible for refund when any of the following criteria are
+                    met: (1)
+                    You have all the prerequisites which were required to resolve the requirements and requirements was
+                    not resolved till the time account was active. (2) The requirement is out of scope for the
+                    particular
+                    plan.</p>
+                <h5 class="text-light bg-theme p-2">PRIVACY POLICY</h5>
+                <p>The GPT MOVIDU TECHNOLOGY PRIVATE LIMITED which is an integral part of these Terms and
+                    Conditions, is incorporated here by reference. If you have not yet reviewed the GPT MOVIDU
+                    TECHNOLOGY PRIVATE LIMITED Privacy Policy, then please do so prior to agreeing to these Terms
+                    and Conditions. You agree that beyond the Personal Information identified in the Privacy Policy, any
+                    information or data disclosed or sent to GPT MOVIDU TECHNOLOGY PRIVATE LIMITED over the
+                    telephone, electronically or otherwise, is not confidential or proprietary to you. You hereby agree
+                    and
+                    consent to data assimilation and evaluation derived during the usage of the services rendered by
+                    M/s.
+                    GPT MOVIDU TECHNOLOGY PRIVATE LIMITED and/or suppliers/strategic partners (“the Recipient”). You
+                    hereby give consent to the collation and user of this data collection by the Recipient for mapping
+                    your
+                    work pattern generally while you are working with the employer/company or while using the
+                    services/products rendered by GPT MOVIDU TECHNOLOGY PRIVATE LIMITED.</p>
+                <h5 class="text-light bg-theme p-2">FAIR USAGE POLICY; SUSPENSION OR TERMINATION OF SUBSCRIPTION:</h5>
+                <p>Each Subscriber’s use of the services are subject to GPT MOVIDU TECHNOLOGY PRIVATE LIMITED
+                    “fair use” policy. Under this policy, if at any time, in GPT MOVIDU TECHNOLOGY PRIVATE LIMITED sole
+                    discretion, a user is found to be abusing the service by exceeding the level of use reasonably
+                    expected for use, than GPT MOVIDU TECHNOLOGY PRIVATE LIMITED reserves the right to suspend or
+                    terminate Subscriber’s Subscription / Services. In addition, GPT MOVIDU TECHNOLOGY PRIVATE
+                    LIMITED reserves the right to suspend or terminate any Subscription / Services of any Subscriber
+                    that
+                    GPT MOVIDU TECHNOLOGY PRIVATE LIMITED, in its sole discretion, determines are being used (a)
+                    fraudulently, (b) by any person other than Subscriber, or (c) for any computer system other than a
+                    Registered System. User may terminate the Service at any time by giving written or electronic notice
+                    to GPT MOVIDU TECHNOLOGY PRIVATE LIMITED; provided, however, that User will not be entitled to a
+                    refund of any fees prepaid by User for the Service.</p>
+                <h5 class="text-light bg-theme p-2">LINKING</h5>
+                <p>You may not create hyperlinks to any portion of the GPT MOVIDU TECHNOLOGY PRIVATE LIMITED and
+                    Learning Brothers Portal, nor any Materials or Software posted therein. This may ensue liability
+                    under
+                    applicable laws in India.</p>
+                <h5 class="text-light bg-theme p-2">INDEMNITY</h5>
+                <p>You agree to indemnify, defend, and hold GPT MOVIDU TECHNOLOGY PRIVATE LIMITED including its
+                    subsidiaries, affiliates, officers, directors, employees, agents, licensors, consultants and
+                    suppliers
+                    harmless from and against all claims, demands, actions, liabilities, losses, expenses, damages, and
+                    costs, including actual attorneys’ fees, resulting from your violation of the material terms of
+                    these
+                    Terms of Use, any misuse or abuse of a Service, any use of the Service that amounts to infringement,
+                    or infringement by any other user of your account of any intellectual property or other right of
+                    GPT MOVIDU
+                    TECHNOLOGY PRIVATE LIMITED or any other third party. You will cooperate as fully as reasonably
+                    required in GPT MOVIDU TECHNOLOGY PRIVATE LIMITED of any claim, liability, damage or loss.
+                    GPT MOVIDU TECHNOLOGY PRIVATE LIMITED reserves the right, at its own expense, to assume the
+                    exclusive and control of any matter otherwise subject to indemnification by you and you shall not in
+                    any event settle any matter without the written consent of GPT MOVIDU TECHNOLOGY PRIVATE
+                    LIMITED. You agree immediately to notify GPT MOVIDU TECHNOLOGY PRIVATE LIMITED of any
+                    unauthorized use of your account or any other breach of security known to you.</p>
+                <h5 class="text-light bg-theme p-2">USER RESPONSIBILITY</h5>
+                <p>In connection with obtaining services, you agree that you will:</p>
+                <ul>
+                    <li>Cooperate with the GPT MOVIDU TECHNOLOGY PRIVATE LIMITED and/or its suppliers support
+                        executive: We’ll use commercially reasonable efforts to provide the support to you. Our
+                        experience shows that most issues can be corrected as a result of close cooperation between
+                        you and the support executive. Please listen carefully to the executive and follow the
+                        instructions. You must confirm that the following conditions are true:
+                        <ul>
+                            <li>The situation giving rise to the question is, reproducible</li>
+                            <li>You must have knowledge regarding the hardware system, any software involved,
+                                and in the facts and circumstances surrounding the incident</li>
+                            <li>The full system, including software and hardware, is available to you and accessible
+                                by you without limit during any discussions with GPT MOVIDU TECHNOLOGY PRIVATE
+                                LIMITED and/or its supplier support executive.</li>
+                        </ul>
+                    </li>
+                    <li>2. Software/Data Backup: You understand and agree that GPT MOVIDU TECHNOLOGY PRIVATE
+                        LIMITED shall under no circumstance be responsible for any lost or corrupted software or
+                        data. GPT MOVIDU TECHNOLOGY PRIVATE LIMITED strongly recommends that you at all times
+                        maintain a complete data backup and disaster recovery plan.</li>
+                </ul>
+                <h5 class="text-light bg-theme p-2">AVAILABILITY OF SERVICES AND MATERIALS UNDER FORCE MAJEURE
+                    CIRCUMSTANCES</h5>
+                <p>You hereby acknowledge that circumstances outside of GPT MOVIDU TECHNOLOGY PRIVATE LIMITED
+                    reasonable control (e.g., a large scale outbreak of a new computer virus, strikes, riots, wars,
+                    other military action, civil disorder, acts of terrorism, fires, floods, vandalism, sabotage, acts
+                    of third parties,
+                    or the like) may cause significant delays in GPT MOVIDU TECHNOLOGY PRIVATE LIMITED or its
+                    suppliers’ ability to schedule a support session or performance of any of the services sought under
+                    your Plan Order. You hereby release GPT MOVIDU TECHNOLOGY PRIVATE LIMITED from any and all
+                    liability and agree that GPT MOVIDU TECHNOLOGY PRIVATE LIMITED shan’t be liable to you or any
+                    third party for any direct or indirect damages whatsoever, resulting from such delays.</p>
+                <p>GPT MOVIDU TECHNOLOGY PRIVATE LIMITED or its suppliers may, at any time, without notice or
+                    liability, restrict the use of the Service or limit its time of availability in order to perform
+                    maintenance
+                    activities and to maintain session control.</p>
+                <h5 class="text-light bg-theme p-2">EXCLUSIONS FROM “SERVICES”</h5>
+                <p>“Services” shan’t include the following:</p>
+                <ul>
+                    <li>Any item or activity not covered by the terms of a Plan Order</li>
+                    <li>Service beyond the duration limitations identified in your Plan Order</li>
+                    <li>Problem diagnosis and support that may not be completed because of a problem with your
+                        computer or other equipment, or their configuration that is beyond our control</li>
+                    <li>Software, including the operating system and software added to the registered hardware
+                        products which are out of scope for the Service Plan</li>
+                    <li>Problems that may and do result from:
+                        <ul>
+                            <li>External causes such as accident, abuse, misuse, or problems with electrical power</li>
+                            <li>Third party usage or tampering</li>
+                            <li>Usage that is not in accordance with product instructions provided by manufacture</li>
+                            <li>Failure to follow the product instructions provided by manufacture or failure to perform
+                                preventive maintenance; or</li>
+                            <li>Problems caused by using accessories, parts, or components not compatible with the
+                                product.</li>
+                            <li>Non Compliance with the GPT MOVIDU TECHNOLOGY PRIVATE LIMITED and Learning
+                                Brothers support instructions for resolving the query.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h5 class="text-light bg-theme p-2">THIRD PARTY PRODUCTS</h5>
+                <p>As part of the Services, GPT MOVIDU TECHNOLOGY PRIVATE LIMITED may suggest that you acquire,
+                    install and use certain third party software or services (“Third Party Software”). Third Party
+                    Software is
+                    licensed to you by the respective owners or licensees of the Third Party Software. You must agree to
+                    the terms and conditions set forth by such owners or licensees before installing Third Party
+                    Software,
+                    whether GPT MOVIDU TECHNOLOGY PRIVATE LIMITED assists you in the acquisition, installation,
+                    and/or use of Third Party Software. GPT MOVIDU TECHNOLOGY PRIVATE LIMITED has no responsibility
+                    or rights to the Third Party Software and does not license Third Party Software to you or make any
+                    representation or warranty regarding the Third Party Software.</p>
+                <p>To the extent that we provide assistance and support for Third Party Software or equipment, you must
+                    ensure that you comply with the terms and conditions under which you licensed such Third Party
+                    Software or purchased such equipment. We make no representation or warranty that we are an
+                    authorized service provider for Third Party Software or for any equipment; it is your sole
+                    responsibility
+                    to determine if you require additional rights for us to provide such support and if so, to acquire
+                    such
+                    rights. You acknowledge that support of Third Party Software or equipment by an unauthorized
+                    service provider may void any warranty made by the supplier of such Third Party Software or
+                    equipment. Any third party’s software licensed or purchased by you are at your own risk and cost.
+                    shall bear no liability, in whatever form, on account of any direct or indirect, consequential,
+                    incidental,
+                    special or punitive damages and/ or consequences that may be entailed by the you or anyone else by
+                    the use of these third party software. You agree and undertake to hold (including its directors,
+                    promoter, agents, sub-contractors, employees, subsidiaries and alike) harmless and indemnified
+                    against any third party claim, damage, liability, loss or cost whatsoever (including litigation
+                    cost, if any)
+                    that has accrued due to your fault, negligence, non-adherence to covenants, acts or omissions.
+                </p>
+                <h5 class="text-light bg-theme p-2">THIRD PARTY AGREEMENTS</h5>
+                <p>As part of the Services, GPT MOVIDU TECHNOLOGY PRIVATE LIMITED may suggest certain third party
+                    services to you. If you choose to subscribe to or otherwise use any third party services, your use
+                    of
+                    any such services is subject to the terms of service of such third party service provider. You agree
+                    to
+                    comply with such provider’s terms of service and that the third party provider is solely responsible
+                    for
+                    delivery of its service(s) to you and your use of them. Any third party’s services opted by you are
+                    at
+                    your own risk and cost. shall bear no liability, in whatever form, on account of any direct or
+                    indirect,
+                    consequential, incidental, special or punitive damages and/ or consequences that may be entailed by
+                    the you or anyone else by the use of these third party services. You agree and undertake to hold
+                    (including its directors, promoter, agents, sub-contractors, employees, subsidiaries and alike)
+                    harmless and indemnified against any third party claim, damage, liability, loss or cost whatsoever
+                    (including litigation cost, if any) that has accrued due to your fault, negligence, non-adherence to
+                    covenants, acts or omissions. Violation of such third party provider’s terms of service may, in
+                    GPT MOVIDU
+                    TECHNOLOGY PRIVATE LIMITED sole discretion, result in the termination of your customer account
+                    and use of service.</p>
+                <h5 class="text-light bg-theme p-2">LIMITED SERVICE WARRANTY</h5>
+                <p>GPT MOVIDU TECHNOLOGY PRIVATE LIMITED disclaims all warranties express or implied as to the
+                    services, the materials and the software whether in the nature of merchantability or fitness for a
+                    particular purpose, or otherwise. In the event that you’re not satisfied with the services, your
+                    sole
+                    remedy is to (a) allow GPT MOVIDU TECHNOLOGY PRIVATE LIMITED to re-perform the services subject
+                    to dispute, (b) re-download and reinstall the software. Some of the GPT MOVIDU TECHNOLOGY
+                    PRIVATE LIMITED service plans come with a 7-day limited service warranty as provided in online
+                    documentation for those specific plans. This 7-day limited service warranty is subject to fulfilment
+                    of
+                    the terms for the specific service plan which is in addition to the terms and conditions in this
+                    document.</p>
+                <p>GPT MOVIDU TECHNOLOGY PRIVATE LIMITED and/or its respective suppliers make no representations
+                    about the suitability of the information contained in the services, materials or the software for
+                    any
+                    purpose whatsoever. All materials and software are provided “as is” without warranty of any kind
+                    whatsoever. GPT MOVIDU TECHNOLOGY PRIVATE LIMITED and/or its respective suppliers hereby
+                    disclaim all warranties of any kind whether express or implied with regard to this information,
+                    including
+                    all warranties and conditions of merchantability, whether express, implied or statutory, fitness for
+                    a
+                    particular purpose, title and non-infringement.</p>
+                <p>The materials could include inaccuracies or typographical errors. Changes are periodically added to
+                    the information herein. GPT MOVIDU TECHNOLOGY PRIVATE LIMITED and/or its respective suppliers
+                    may make improvements and/or changes in the materials and/or the software described herein at any
+                    time. In no event shall GPT MOVIDU TECHNOLOGY PRIVATE LIMITED and/or its respective suppliers be
+                    liable for any special, indirect or consequential damages or any damages whatsoever resulting from
+                    loss of use, data revenue or profits, whether in an action of contract, negligence or other tortious
+                    action, incurred by you or any third party, whether arising out of or in connection with the use or
+                    performance of services, materials or software, failure to provide the same, or information
+                    available in
+                    the materials.</p>
+                <h5 class="text-light bg-theme p-2">NO OFFER</h5>
+                <p>The GPT MOVIDU TECHNOLOGY PRIVATE LIMITED is available internationally and may contain
+                    references to GPT MOVIDU TECHNOLOGY PRIVATE LIMITED products, services, and programs that are
+                    not available in a viewer’s country. These references do not imply that GPT MOVIDU TECHNOLOGY
+                    PRIVATE LIMITED intends to make such products, services, or programs available in such country.</p>
+                <h5 class="text-light bg-theme p-2">MODIFICATION</h5>
+                <p>GPT MOVIDU TECHNOLOGY PRIVATE LIMITED reserves the right to amend the Terms and Condition,
+                    and the GPT MOVIDU TECHNOLOGY PRIVATE LIMITED at any time by (a) posting a revised version of
+                    the Terms and Conditions on the GPT MOVIDU TECHNOLOGY PRIVATE LIMITED, or by (b) sending
+                    information regarding any amendment to the Terms of Service to the email address you provide to
+                    GPT MOVIDU TECHNOLOGY PRIVATE LIMITED in connection with registration. You are responsible for
+                    regularly reviewing the GPT MOVIDU TECHNOLOGY PRIVATE LIMITED website to be notified of any
+                    amendments to the Terms and Conditions. Your use of the GPT MOVIDU TECHNOLOGY PRIVATE
+                    LIMITED or the Services after an amendment to the Terms and Conditions shall be deemed
+                    acceptance by you of the amended Terms and Conditions.</p>
+                <h5 class="text-light bg-theme p-2">PRIVACY POLICY</h5>
+                <p>PLEASE READ THIS CAREFULLY</p>
+                <p>This privacy policy discloses the practices for GPT MOVIDU TECHNOLOGY PRIVATE LIMITED to protect
+                    privacy for users. By accessing or otherwise using this website, you agree to be bound contractually
+                    by this Privacy Policy.</p>
+                <ul>
+                    <li>Modification of Privacy Policy – We reserve the right to modify this Privacy Policy at any time,
+                        and
+                        without prior notice, by posting amended terms on this website. Your continued use indicates
+                        your
+                        acceptance of the amended Privacy Policy. You should check this Privacy Policy periodically for
+                        modifications.</li>
+                    <li>Additional “Click-Wrapped” Agreements – This Privacy Policy provides the general policies of
+                        this
+                        website regarding the collection and use of private information and this website’s use of email
+                        to
+                        contact you. We reserve the right to offer to you participation in such additional agreements in
+                        “click-wrapped” format (where you may indicate your agreement by clicking on a button or icon
+                        that
+                        states “I agree” or “Ok”) that may provide specific exceptions to these general policies. If
+                        there is any
+                        inconsistency or conflict between this Privacy Policy and any such “click-wrapped” agreement,
+                        the
+                        “click-wrapped” agreement shall prevail.</li>
+                    <li>INFORMATION COLLECTION AND USE – GPT MOVIDU TECHNOLOGY PRIVATE LIMITED, through
+                        its technology service provider, receives and stores any information you enter on its Website or
+                        through any other manner. You can choose not to provide certain information, but then you might
+                        not
+                        be able to take advantage of many of our features, which are based on the assessment of the
+                        personal data given by the users. We use the information that you provide for various purposes
+                        such
+                        as as responding to your request, customizing the services provided to you and improving
+                        communication with you. We receive and store certain types of information whenever you interact
+                        with
+                        us upon receiving your express consent, which is given by your clicking “I Agree” in the sign up
+                        form.
+                        We also use "cookies," and we obtain certain types of information when your Web browser accesses
+                        GPT MOVIDU.in or advertisements and other content served by or on behalf of GPT MOVIDU.in on other Web
+                        sites. When you sign up on GPT MOVIDU.in or any Web site created by our recognized affiliates of
+                        GPT MOVIDU
+                        TECHNOLOGY PRIVATE LIMITED, we may receive information about your location and your mobile
+                        device, including a unique identifier for your device. We may use this information to serve you
+                        as well
+                        as our other customers better services. Most devices allow you to turn-off location services. If
+                        you do
+                        not wish the information of your location to be received by ……, you may choose to turn that off
+                        before accessing the Web site of GPT MOVIDU TECHNOLOGY PRIVATE LIMITED or any of its’ affiliates.
+                        GPT MOVIDU TECHNOLOGY PRIVATE LIMITED is the sole owner of the information collected through
+                        these mediums. We will not sell or rent this information to others in ways different from what
+                        is
+                        disclosed in this policy. We may receive information about you from other sources and add it to
+                        our
+                        account information. You hereby agree and consent to data assimilation and evaluation derived
+                        during
+                        the usage of the services rendered by GPT MOVIDU TECHNOLOGY PRIVATE LIMITED and/or
+                        suppliers/strategic partners (“the Recipient”). You hereby give consent to the collation and
+                        user of this
+                        data collection by GPT MOVIDU TECHNOLOGY PRIVATE LIMITED for mapping your work pattern
+                        generally while you are working with the employer/company or while using the services/products
+                        rendered by GPT MOVIDU TECHNOLOGY PRIVATE LIMITED.</li>
+                    <li>Personal Information – We will ask you when we need information that personally identifies you
+                        (personal information) or allows us to contact you. In order to use the GPT MOVIDU TECHNOLOGY
+                        PRIVATE LIMITED services, user must first complete the registration process. During registration
+                        the
+                        user is required to give user contact information (such as First and Last name, E-mail address,
+                        Postal
+                        address, Personal identifier etc.). GPT MOVIDU TECHNOLOGY PRIVATE LIMITED will use your contact
+                        details to contact you regarding the products, solutions, and / or services you have requested.
+                        This
+                        includes re-registration / renewal notifications, special offers, and surveys on improving our
+                        services.
+                        Your clicking the sign up form shall be construed as express consent on your part for receiving
+                        and
+                        storing of your personal information by GPT MOVIDU. GPT MOVIDU has in place a confidentiality agreement
+                        with
+                        its technology partner, not to disseminate your personal information to any other source except
+                        GPT MOVIDU TECHNOLOGY PRIVATE LIMITED, and in the event of breach by the technology partner,
+                        you shall raise claims directly with the technology partner, and not against GPT MOVIDU, the details
+                        of which
+                        shall be disclosed by GPT MOVIDU. You expressly waive off your rights to raise any claims against
+                        GPT MOVIDU
+                        for any infringement of the terms hereof by a third party, including the technology partner of
+                        GPT MOVIDU.
+                        In case, at any point of time, you wish to withdraw your consent to allow GPT MOVIDU to store and
+                        retain your personal information, you may send a written intimation of the withdrawl to us and
+                        we shall
+                        undertake to delete such personal information about you from our records, which may not
+                        otherwise
+                        be available on the public domain.</li>
+                    <li>Payment Information – If user registers to use the service provided by GPT MOVIDU TECHNOLOGY
+                        PRIVATE LIMITED, we will collect credit card information, and other payment information
+                        necessary
+                        to complete a payment from user. GPT MOVIDU TECHNOLOGY PRIVATE LIMITED may use a third party
+                        to process and verify credit cards for billing purposes. This requires us to share user name,
+                        credit card
+                        number, expiration date and billing address with the credit card processing company. When
+                        processing a payment transaction, GPT MOVIDU TECHNOLOGY PRIVATE LIMITED will also obtain
+                        information regarding the amount of the payment and other transaction data. We may transfer or
+                        disclose this payment information to a third party only to the extent necessary in order to
+                        legally
+                        complete the payment processing.</li>
+                    <li>Subscriber Computer – We may also ask for information related to your systems, infrastructure,
+                        and methodologies. This may include: any information that seems required to provide the
+                        solutions, or
+                        services. Generally, this information is required to provide personalised support to you, and to
+                        help us
+                        update our support tools.</li>
+                    <li>Remote Access – While requesting support you may request for the problem to be resolved by
+                        taking control of your computer. GPT MOVIDU TECHNOLOGY PRIVATE LIMITED uses qualified tools
+                        which allow users to grant control of the user computer to an expert through remote over the
+                        Internet,
+                        so that the expert can diagnose or correct problems. Experts are not allowed to use the Remote
+                        Access software until and unless they have received adequate training in its use, and users have
+                        consented to grant control. In addition, technicians will not use Remote Access tools to obtain
+                        confidential or sensitive information stored on user computers or networks, deliberately destroy
+                        information on user computers or networks, or cause users to experience system problems. Use of
+                        the Remote Access and Diagnoses applications is also subject to the terms of use in the
+                        respective
+                        software licence agreements.</li>
+                    <li>Remote Session Records – GPT MOVIDU TECHNOLOGY PRIVATE LIMITED reserves the right to
+                        monitor online and offline sessions between user and a support executive for quality control of
+                        the
+                        service provided to the customer by the support executive. In addition, we may record online and
+                        offline sessions conducted on the web site for user reference and to assist in resolution of
+                        disputes
+                        and/or potential complaints. The session records will also be used to improve the service, build
+                        a
+                        support knowledge base, and/or conduct internal market research. Session record data will not be
+                        correlated with personally identifiable data about individual customers.</li>
+                    <li>Cookies – Cookies are pieces of information that a web site transfers to your computer’s hard
+                        disk
+                        for record-keeping purposes. Cookies in and of themselves do not personally identify users,
+                        although
+                        they do identify a user’s computer. Most browsers are initially set up to accept cookies. If you
+                        prefer,
+                        you can set your browser to refuse cookies. However, you may not be able to take full advantage
+                        of a
+                        web site if you do so. We reserve the right to use cookies to collect demographic and profile
+                        data for
+                        purposes of delivering content specific to your interests.
+                        We use Google Analytics, Google AdWords Conversion tracker, and many other services that place
+                        cookies on a browser across the website. These cookies help us increase the website’s
+                        effectiveness
+                        for our visitors. These cookies are set and read by systems. To opt out of Google tracking,
+                        please visit
+                        this <a href="https://policies.google.com/technologies/ads" target="_blank">page</a>. We use
+                        AdWords remarketing to market our sites across the web. We place a cookie on a browser,
+                        and then a 3rd party (Google) reads these cookies and may serve an ad on a 3rd party site. You
+                        may opt out of this ad serving on Google’s opt out page. If you are concerned about 3rd party
+                        cookies
+                        served by networks, you should also visit the <a href="https://thenai.org/opt-out/"
+                            target="_blank">Network Advertising Initiative opt-out page</a>.</li>
+                    <li>IP Addresses – IP addresses are used by your computer every time you are connected to the
+                        Internet. Your IP address is a number that is used by computers on the network to identify your
+                        computer. IP addresses are automatically collected by our web server as part of demographic and
+                        profile data known as “traffic data” so that data (such as the web pages you request) can be
+                        sent to
+                        you. We will not use your IP address to attempt to identify your personal information.</li>
+                    <li>Referrers – A Referrer is the information passed along by a web browser that references the Web
+                        URL you linked from, and is automatically collected by our web server as “traffic data”. We
+                        reserve the
+                        right to use this information to identify broad demographic trends that may be used to provide
+                        information tailored to your interests. You will not be personally identified from this
+                        information.</li>
+                    <li>System Information – System information that we collect as part of “traffic data” includes time,
+                        the
+                        type of web browser being used, the operating system/platform, and CPU speed etc. This
+                        information
+                        is sent automatically by your web browser when you are connected to a web site. We reserve the
+                        right
+                        to use this information for purposes of identifying broad demographic trends and may be used to
+                        provide information appropriate for your computer system. You will not be personally identified
+                        from
+                        this information.</li>
+                    <li>Sharing of Information – We feel strongly that your personal data should only be seen by you,
+                        unless you choose to share it with others. We will never sell, rent, licence or exchange
+                        personally
+                        identifiable data with a third party without your permission, except as otherwise provided. No
+                        personally identifiable data or information will be shared with advertisers or partners without
+                        your
+                        permission. Some of your information may be shared on an aggregate basis only, as a part of a
+                        larger
+                        set of statistics (for example, statistics that indicate the percentage of our members that are
+                        female),
+                        but that information will not be sufficient to permit the recipient to identify you.
+                        Notwithstanding the
+                        forgoing, we will only disclose personally identifiable data without your permission in the
+                        following
+                        limited circumstances: (i) if we are required to do so by law, or (ii) if we have the good faith
+                        belief that
+                        such action is necessary to conform to applicable laws or comply with legal process served on
+                        us, or
+                        to protect and defend this site’s rights or property or the rights or property of an account
+                        holder of this
+                        site.</li>
+                    <li>Other Websites, Links, And Advertisers – This web site contains links to other websites. We
+                        reserve this right to have advertisers or other third parties on this site who may also have
+                        links on this
+                        web site and may link to this site. The privacy practices of advertisers or web sites linked to
+                        this site
+                        are not covered by this privacy statement, and we are not responsible for the privacy practices
+                        or the
+                        content of such web sites. Additionally, if you make a purchase from a store or merchant listed
+                        on or
+                        linked to this site, any information that you give, such as your credit card number and contact
+                        information, is provided to those merchants. These merchants have separate privacy and data
+                        collection practices, and we have no responsibility or liability for these independent policies
+                        or
+                        merchant web sites displayed on our web site from time to time. You should be careful to review
+                        any
+                        privacy policies posted on any of these sites before signing up with and using them.</li>
+                    <li>Security – Information collected by this site is stored in secure operating environments that
+                        are
+                        not available to the public. Our employees are required by us to maintain and uphold your
+                        privacy and
+                        security and are aware of our privacy and security policies. Unfortunately, no data transmission
+                        over
+                        the Internet can be guaranteed 100% secure. As a result, while we strive to protect your
+                        personal
+                        information, we cannot ensure or warrant the security of any information you transmit to us, and
+                        you
+                        do so at your own risk.</li>
+                    <li>No Liability for Acts of Third Parties – Although GPT MOVIDU TECHNOLOGY PRIVATE LIMITED will
+                        use reasonable efforts to safeguard the confidentiality of your personally identifiable
+                        information
+                        (including credit card information), transmissions made by means of the Internet cannot be made
+                        absolutely secure. GPT MOVIDU TECHNOLOGY PRIVATE LIMITED will have no liability for disclosure of
+                        information due to errors in transmission or unauthorised acts of third parties. In addition,
+                        GPT MOVIDU
+                        TECHNOLOGY PRIVATE LIMITED will release specific information about you to comply with any
+                        valid and relevant legal process such as a search warrant, subpoena, statute or court order. We
+                        will
+                        also release specific information in special cases, such as if there is an attempted breach of
+                        security
+                        or a physical threat to you or others. Please note that if you give out personal identification
+                        information
+                        online — that information can be collected and used by third parties. Although we strive to
+                        protect our
+                        users’ privacy, we cannot guarantee the security of information you post in these forums. You
+                        disclose
+                        such information at your own risk.</li>
+                </ul>
+                <p>If user has any questions about the privacy Policy at our Website, user can email user inquiries to
+                    support@movidu.in</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <section class="contact-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="contact-content">
+                        <a href="index.html"><img src="images/inmovidulogowhite.png" alt="logo"></a>
+                        <p>GPT MOVIDU is a one stop platform for
+                            all your hiring requirements </p>
+                        <div class="hr"></div>
+                        <h6>1018-993, 20th Cross Rd, Sector 7, HSR Layout, Bengaluru, Karnataka 560102 </h6>
+                        <h6>+91-8296507779<span>|</span>+91-8296507779
+                            <span>|</span>support@movidu.in
+                        </h6>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-6 mt-5 pt-5 ">
+                    <h4>Documents</h4>
+                    <ul class="pl-0" type="none">
+                        <li><a href="t&c.html">Terms & Conditions</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-use.html">Terms of Use</a></li>
+                        <li><a href="refund-policy.html">Refund Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright &copy; 2024 <img src="images/inmovidulogowhite.png" alt="logo"> All Rights Reserved.
+        </p>
+    </footer>
+    <!-- End -->
+
+    <!-- Bootstarp JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
