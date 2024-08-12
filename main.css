@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
 }
+body{
+    font-family: 'Poppins', sans-serif;
+}
 .row{
     margin-right: 0;
 }
@@ -17,7 +20,7 @@
     position: absolute;
     z-index: 2;
     left: 20%;
-    top: 10.5%;
+    top: 9.5%;
 }
 .bg-blog1{
     background-image: url('images/bg-blog.avif');
