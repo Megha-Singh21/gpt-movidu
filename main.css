@@ -16,6 +16,12 @@ body{
     padding-left: 100px;
     height: 600px;
 }
+.bg-section-1 h1{
+    font-size: 32px;
+    color: rgb(202, 48, 64);
+    font-weight: 350;
+    letter-spacing: 1px;
+}
 .video-img{
     position: absolute;
     z-index: 2;
