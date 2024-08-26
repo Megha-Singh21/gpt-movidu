@@ -12,6 +12,12 @@ body{
     padding-right: 0;
     padding-left: 0;
 }
+.navbar{
+    background-image: linear-gradient(90deg, #54006b, #cc123d);
+}
+.navbar-collapse{
+    flex-grow: 0;
+}
 .bg-section-1{
     padding-left: 100px;
     height: 600px;
@@ -67,5 +73,12 @@ body{
     }
     .contact-area .pt-5{
         padding-top: 20px !important;
+    }
+    .m-none{
+        display: none;
+    }
+    .video-img{
+        top: 6%;
+        left: 37%;
     }
 }

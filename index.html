@@ -117,50 +117,36 @@
             </div>
         </div>
 
-        <div id="header" class="header_container container-fluid">
-            <div class="max-width-container">
-                <div class='layer'></div>
-
-                <nav class="navbar navbar-expand-md">
-                    <div class="brand_container">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="images/movidu-logo.png" width="180px" alt="">
-                        </a>
-                    </div>
-                    <div class="collapse navbar-collapse navbar_desktop">
-                        <ul class="navbar-nav nav_menu_container">
-                            <li class="nav-item">
-                                <a href="blog.html"
-                                    class="employer_login_on_registration_page text-warning text-decoration-none fs-6  me-2">Blog
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#register"
-                                    class="employer_login_on_registration_page text-warning text-decoration-none fs-6">Register
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a data-toggle="modal" data-target="#login-modal"
-                                    class="employer_login_on_registration_page">
-                                    <button id="header_login_button" class="btn btn-outline-warning">Login</button>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="mobile_registration_login">
-                        <a href="blog.html"
-                            class="employer_login_on_registration_page text-warning text-decoration-none fs-6 mr-1">Blog
-                        </a>
-                        <a href="#register"
-                            class="employer_login_on_registration_page text-warning text-decoration-none fs-6">Register
-                        </a>
-                        <a data-toggle="modal" data-target="#login-modal" class="employer_login_on_registration_page">
-                            <button id="header_login_button" class="btn btn-outline-warning">Login</button>
-                        </a>
-                    </div>
-                </nav>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/movidu-logo.png" width="180px" alt="">
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link text-warning mt-2" href="blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item mt-2">
+                    <a class="nav-link text-warning" href="#register">Register</a>
+                  </li>
+                  <li class="nav-item">
+                    <a data-bs-toggle="modal" data-target="#login-modal"
+                        class="nav-link">
+                        <button class="btn btn-outline-warning">Login</button>
+                    </a>
+                </li>
+                </ul>
+                
+              </div>
             </div>
-        </div>
+          </nav>
+         <!-- navbar end -->
+
         <div id="content">
             <div class="row">
                 <div class="col-md-6">
@@ -184,7 +170,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="float-end">
+                    <div class="float-end m-none">
                         <img src="images/1.png" width="600px" alt="">
                     </div>
                 </div>

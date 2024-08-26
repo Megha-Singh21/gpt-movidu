@@ -14405,7 +14405,7 @@ div.hr-line.is_new_domestic_page {
 
 @media (max-width:991px) and (max-width:575px) {
     .features-div .features.features-small-screen .feature-sub-heading {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 22px;
         margin-bottom: 18px
     }
@@ -15980,9 +15980,7 @@ div.hr-line.is_new_domestic_page {
         width: calc(100% - 32px);
         margin: 0 16px
     }
-    .video-img{
-        display: none;
-    }
+    
     .twm-bnr-hpage-15:after{
         z-index: -1;
         transform: none;
