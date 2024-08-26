@@ -78,7 +78,11 @@ body{
         display: none;
     }
     .video-img{
-        top: 6%;
-        left: 37%;
+        top: 6.5%;
+        left: 38%;
+        width: 80px;
+    }
+    .navbar-brand img{
+        width: 150px;
     }
 }
