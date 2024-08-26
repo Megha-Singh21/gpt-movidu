@@ -96,33 +96,36 @@
         </div>
     </div>
 
-    <div id="header" class="header_container container-fluid">
-        <div class="max-width-container">
-            <div class='layer'></div>
-            <nav class="navbar navbar-expand-md">
-                <div class="brand_container">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="images/movidu-logo.png" width="180px" alt="">
-                    </a>
-                </div>
-                <div class="collapse navbar-collapse navbar_desktop">
-                    <ul class="navbar-nav nav_menu_container">
-                        <li class="nav-item">
-                            <a data-toggle="modal" data-target="#login-modal"
-                                class="employer_login_on_registration_page">
-                                <button id="header_login_button" class="btn btn-outline-warning">Login</button>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="mobile_registration_login">
-                    <a data-toggle="modal" data-target="#login-modal" class="employer_login_on_registration_page">
-                        <button id="header_login_button" class="btn btn-outline-warning">Login</button>
-                    </a>
-                </div>
-            </nav>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/movidu-logo.png" width="180px" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fas fa-bars text-light"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-warning mt-2" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item mt-2">
+                        <a class="nav-link text-warning" href="#register">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-toggle="modal" data-target="#login-modal" class="nav-link">
+                            <button class="btn btn-outline-warning">Login</button>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
         </div>
-    </div>
+    </nav>
     <div class="container pt-3 pb-3">
         <div class="row">
             <div class="col-md-12">
@@ -531,7 +534,8 @@
                                 receipt to “ support@GPT MOVIDU.in ”In 5-7 business days you will get a confirmation for
                                 the course reschedule request.</li>
                             <li>If a rescheduled course is of a higher value, students are required to pay the amount
-                                difference. However, if switching to a course of a lower value, GPT MOVIDU is not liable to
+                                difference. However, if switching to a course of a lower value, GPT MOVIDU is not liable
+                                to
                                 pay the amount difference. A processing fee of Rs. 500/- needs to be paid within 3
                                 days after GPT MOVIDU accepts reschedule request, failing which reschedule request will
                                 be cancelled and no further request will be entertained.</li>
@@ -625,8 +629,8 @@
     <!-- End -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Bootstarp JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
