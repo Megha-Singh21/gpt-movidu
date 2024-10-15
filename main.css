@@ -166,7 +166,7 @@ body {
 }
 .coll-section-1 .carousel-caption{
     right: none;
-    left: 9%;
+    left: none;
     padding-top: 100px;
     padding-bottom: 200px;
 }
